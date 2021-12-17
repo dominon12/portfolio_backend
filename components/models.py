@@ -11,7 +11,7 @@ class Button(models.Model):
 
 
 class Image(models.Model):
-    image = models.ImageField("Image", upload_to="about")
+    image = models.ImageField("Image", upload_to="images")
     alt = models.CharField("Alt", max_length=150)
     width = models.IntegerField("Width", validators=[MinValueValidator(0)])
     height = models.IntegerField("Height", validators=[MinValueValidator(0)])
