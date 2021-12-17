@@ -64,6 +64,7 @@ INSTALLED_APPS = [
     'career',
     'languages',
     'donations',
+    'contact',
 ]
 
 MIDDLEWARE = [
