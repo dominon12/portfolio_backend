@@ -18,6 +18,7 @@ urlpatterns = [
     path("api/v1/career/", include("career.urls", namespace="career")),
     path("api/v1/languages/", include("languages.urls", namespace="languages")),
     path("api/v1/donations/", include("donations.urls", namespace="donations")),
+    path("api/v1/contact/", include("contact.urls", namespace="contact")),
 ]
 
 
