@@ -57,7 +57,8 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     # custom
-    
+    'about',
+    'components',
 ]
 
 MIDDLEWARE = [
