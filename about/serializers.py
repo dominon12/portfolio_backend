@@ -20,6 +20,7 @@ class AboutUnitSerializer(serializers.ModelSerializer):
 
 
 class ProfileSerializer(serializers.ModelSerializer):
+    aboutUnits = AboutUnitSerializer(read_only=True, many=True)
     photo = components_serializers.ImageSerializer(read_only=True)
 
     class Meta:
@@ -30,5 +31,6 @@ class ProfileSerializer(serializers.ModelSerializer):
             'jobTitle',
             'nickname',
             'cvDescription',
-            'photo'
+            'photo',
+            'aboutUnits',
         )

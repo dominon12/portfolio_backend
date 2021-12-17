@@ -17,6 +17,11 @@ class AboutUnitAdmin(admin.ModelAdmin):
     get_image.short_description = "Image"
 
 
+class AboutUnitInline(admin.StackedInline):
+    model = models.AboutUnit
+    extra = 1
+
+
 @admin.register(models.Profile)
 class ProfileAdmin(admin.ModelAdmin):
     list_display = (
@@ -26,6 +31,7 @@ class ProfileAdmin(admin.ModelAdmin):
         'jobTitle', 
         'nickname'
     )
+    inlines = (AboutUnitInline,)
 
     def get_image(self, obj):
         try:
