@@ -12,7 +12,8 @@ urlpatterns = [
     path("ckeditor/", include("ckeditor_uploader.urls")),
     # endpoints
     path("api/v1/health/", views.health, name="health"),
-    path("api/v1/about/", include("about.urls", namespace="about"))
+    path("api/v1/about/", include("about.urls", namespace="about")),
+    path("api/v1/projects/", include("projects.urls", namespace="projects")),
 ]
 
 

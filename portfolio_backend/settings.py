@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     # custom
     'about',
     'components',
+    'projects',
 ]
 
 MIDDLEWARE = [
