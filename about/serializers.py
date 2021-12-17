@@ -17,3 +17,18 @@ class AboutUnitSerializer(serializers.ModelSerializer):
             'image',
             'button'
         )
+
+
+class ProfileSerializer(serializers.ModelSerializer):
+    photo = components_serializers.ImageSerializer(read_only=True)
+
+    class Meta:
+        model = models.Profile
+        fields = (
+            'firstName',
+            'lastName',
+            'jobTitle',
+            'nickname',
+            'cvDescription',
+            'photo'
+        )
