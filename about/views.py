@@ -5,12 +5,7 @@ from rest_framework.response import Response
 from . import models, serializers
 
 
-class AboutUnitList(ListAPIView):
-    queryset = models.AboutUnit.objects.all()
-    serializer_class = serializers.AboutUnitSerializer
-
-
-class ProfileDetail(APIView):
+class AboutDetail(APIView):
 
     def get(self, request):
         profile = models.Profile.objects.first()
