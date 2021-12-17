@@ -1,0 +1,16 @@
+# version control
+.git/
+
+# virtual environment
+venv/
+
+# credentials
+.env
+
+# local filtes
+__pycache__/
+media/
+logs/
+static/
+migrations/
+db.sqlite3
