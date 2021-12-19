@@ -14,3 +14,6 @@ logs/
 static/
 migrations/
 db.sqlite3
+
+# production
+config/
