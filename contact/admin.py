@@ -5,4 +5,4 @@ from . import models
 
 @admin.register(models.ContactMethod)
 class ContactMethodAdmin(admin.ModelAdmin):
-    list_display = ('name', 'link')
+    list_display = ('name', 'link', 'order')

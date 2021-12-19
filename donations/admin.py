@@ -6,7 +6,7 @@ from . import models
 
 @admin.register(models.DonationMethod)
 class DonationMethodAdmin(admin.ModelAdmin):
-    list_display = ('name', 'link', 'isLink', 'get_image')
+    list_display = ('name', 'link', 'isLink', 'get_image', 'order')
     list_filter = ('isLink',)
     search_fields = ('name', 'link')
 
