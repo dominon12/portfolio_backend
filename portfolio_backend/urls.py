@@ -11,7 +11,14 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("ckeditor/", include("ckeditor_uploader.urls")),
     # endpoints
-    path('api/v1/health', views.health, name="health"),
+    path("api/v1/health/", views.health, name="health"),
+    path("api/v1/about/", include("about.urls", namespace="about")),
+    path("api/v1/projects/", include("projects.urls", namespace="projects")),
+    path("api/v1/skills/", include("skills.urls", namespace="skills")),
+    path("api/v1/career/", include("career.urls", namespace="career")),
+    path("api/v1/languages/", include("languages.urls", namespace="languages")),
+    path("api/v1/donations/", include("donations.urls", namespace="donations")),
+    path("api/v1/contact/", include("contact.urls", namespace="contact")),
 ]
 
 
