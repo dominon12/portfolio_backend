@@ -7,6 +7,10 @@ class DonationMethod(models.Model):
     link = models.CharField("Link", max_length=250)
     isLink = models.BooleanField("Is link", default=True)
     image = models.ForeignKey("components.Image", on_delete=models.CASCADE)
+    order = models.IntegerField("Ordering number")
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        ordering = ['order']
