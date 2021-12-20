@@ -18,7 +18,6 @@ class ProjectSerializer(serializers.ModelSerializer):
             'image',
             'shortDescription',
             'description',
-            'type',
             'date',
             'implementationTime',
             'link',

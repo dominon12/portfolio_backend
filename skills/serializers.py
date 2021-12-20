@@ -8,7 +8,14 @@ class TechnologySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = models.Technology
-        fields = ('pk', 'techGroup', 'name', 'level', 'isRelevant')
+        fields = (
+            'pk', 
+            'techGroup', 
+            'name', 
+            'level', 
+            'isRelevant', 
+            'showAsFilter'
+        )
 
 
 class TechGroupSerializer(serializers.ModelSerializer):
@@ -16,4 +23,4 @@ class TechGroupSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = models.TechGroup
-        fields = ('pk', 'name', 'skills')
+        fields = ('pk', 'name', 'skills', 'showAsSkill')
