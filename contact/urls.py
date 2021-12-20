@@ -7,4 +7,5 @@ app_name = 'contact'
 
 urlpatterns = [
     path('contact-method/', views.ContactMethodList.as_view(), name='contact-methods-list'),
+    path('contact-request/', views.ContactRequestCreate.as_view(), name='contact-request-create'),
 ]
