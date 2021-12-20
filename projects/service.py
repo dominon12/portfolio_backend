@@ -1,11 +1,10 @@
-from django.db.models import Q
 
 
 
 def filter_projects(qs, getParams):
     filterBy = getParams.get("filterBy")
     if filterBy:
-        qs = qs.filter(Q(type__icontains=filterBy) | Q(technologies__name__in=[filterBy]))
+        qs = qs.filter(technologies__name__in=[filterBy])
 
 
     sortBy = getParams.get("sortBy")
