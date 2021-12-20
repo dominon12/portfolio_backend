@@ -1,6 +1,6 @@
 import celery
 
-from . import service
+from portfolio_backend import service
 
 
 @celery.shared_task

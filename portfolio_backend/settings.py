@@ -65,6 +65,7 @@ INSTALLED_APPS = [
     'languages',
     'donations',
     'contact',
+    'errors',
 ]
 
 MIDDLEWARE = [
