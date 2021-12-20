@@ -7,6 +7,7 @@ from skills import serializers as skills_serializers
 
 
 class ProjectSerializer(serializers.ModelSerializer):
+    previewImage = components_serializers.ImageSerializer(read_only=True)
     image = components_serializers.ImageSerializer(read_only=True)
     technologies = skills_serializers.TechnologySerializer(read_only=True, many=True)
 
@@ -15,6 +16,7 @@ class ProjectSerializer(serializers.ModelSerializer):
         fields = (
             'pk',
             'name',
+            'previewImage',
             'image',
             'shortDescription',
             'description',
