@@ -37,7 +37,9 @@ FRONTEND_URL = "https://dominon12.web.app"
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
-    FRONTEND_URL
+    FRONTEND_URL,
+    'https://body-transport.web.app',
+    'https://транспорт-тел.рф'
 ]
 
 
