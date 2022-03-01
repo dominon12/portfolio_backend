@@ -20,6 +20,7 @@ urlpatterns = [
     path("api/v1/donations/", include("donations.urls", namespace="donations")),
     path("api/v1/contact/", include("contact.urls", namespace="contact")),
     path("api/v1/errors/", include("errors.urls", namespace="errors")),
+    path("api/v1/blog/", include("blog.urls", namespace="blog")),
 ]
 
 

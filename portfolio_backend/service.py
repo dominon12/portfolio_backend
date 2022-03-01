@@ -6,8 +6,8 @@ import requests
 
 def build_absolute_uri(request, relative_url):
     uri = request.build_absolute_uri(relative_url)
-    return uri.replace('http', 'https')
-    # return uri
+    # return uri.replace('http', 'https')
+    return uri
 
 
 def send_telegram_bot_message(message: str) -> bool:
